@@ -2,7 +2,7 @@
 
 # Check if a filename was provided
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <filename>"
+    echo "Error: Please provide exactly one filename."
     exit 1
 fi
 
