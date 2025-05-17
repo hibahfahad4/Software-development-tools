@@ -118,4 +118,4 @@ case $goal_lower in
 esac
 
 echo "--------------------------------"
-echo "Thank you for using our program!"
+echo "Thank you for using our program! "
