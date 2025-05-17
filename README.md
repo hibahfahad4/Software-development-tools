@@ -34,7 +34,7 @@ This line specifies that the program will be executed by Bash.
 # Check if a filename was provided
 if [ "$#" -ne 1 ]; then
 It checks the number of arguments passed to the script, which should not equal 1.
-    echo "Usage: $0 <filename>"
+    echo "Error: Please provide exactly one filename."
 It prints an error message if no filename was provided to the script.
     exit 1
 fi
