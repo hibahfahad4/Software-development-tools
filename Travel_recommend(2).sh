@@ -22,4 +22,23 @@ if [[ "$line" =~ "##" && ! "$line" =~ "$group" ]]; then
 print=0
 fi
 
+#### education goal section
+case $goal_lower in
+  "education")
+##Ask user for the type of education
+read -p "Type of education (School/Higher): " edu_type
+edu_type_lower=$(echo "$edu_type" | tr '[:upper:]' '[:lower:]') ###Convert input to lowercase
+
+# Check for the type of education and display relevant data
+if [[ "$edu_type_lower" == "school" ]]; then
+edu_section="## Type: School Education"
+    elif [[ "$edu_type_lower" == "higher" ]]; then
+      edu_section="## Type: Higher Education"
+    else
+      echo "Invalid type."
+      exit 1
+fi
+;;
+esac
+
 
