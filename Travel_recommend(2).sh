@@ -21,4 +21,5 @@ fi
 if [[ "$line" =~ "##" && ! "$line" =~ "$group" ]]; then
 print=0
 fi
+fi
 
